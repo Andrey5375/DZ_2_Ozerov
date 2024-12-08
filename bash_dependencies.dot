@@ -1,0 +1,11 @@
+digraph G {
+    "bash" -> "debianutils";
+    "bash" -> "base-files";
+    "base-files" -> "libcrypt1";
+    "base-files" -> "libc6";
+    "libc6" -> "libcrypt1";
+    "libc6" -> "libgcc-s1";
+    "libgcc-s1" -> "libc6";
+    "libgcc-s1" -> "gcc-10-base";
+    "libcrypt1" -> "libc6";
+}
